@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/b45ddc61d3.js"></script>
+    <title>DIY LEGO 3!</title>
+</head>
+<body>
+    <div class="container align-self-center rounded shadow-sm container-main">
+        <div class="heading">
+            <h1 class="heading__title">DIY LEGO 3!</h1>
+            <h2 class="heading__channel">Cool School</h2>
+        </div>
+        <div class="video">
+                <div class="video__thumbnail" onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                    <button type="button" class="btn btn-info">Play <i class="fas fa-play"></i></button>
+                </div>
+                <div style="display:none">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/AOcYIERhLKQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+        </div>
+        <div class="description">
+            <div class="row">
+                <div class="col-sm description__age"><span class="font-weight-bold">Suggested Age:</span> 5-7</div>
+                <div class="col-sm description__genre"><span class="font-weight-bold">Genre:</span> Pranks</div>
+            </div>
+            <div class="row">
+                <div class="col-sm description__content"><span class="font-weight-bold">Content Type:</span> Let's Play [gaming stream]</div>
+                <div class="col-sm description__topic"><span class="font-weight-bold">Topic:</span> Outer Space, Pringles</div>
+            </div>
+        </div>
+        <div class="rating">
+            <div class="row">
+                <div class="col-sm text-center">
+                    <span class="rounded-pill rating__container"><span class="font-weight-bold rating__title">Entertainment </span><span class="rating__stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></span>
+                </div>
+                <div class="col-sm text-center">
+                    <span class="rounded-pill rating__container"><span class="font-weight-bold rating__title">Production </span><span class="rating__stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></span>
+                </div>
+                <div class="col-sm text-center">
+                    <span class="rounded-pill rating__container"><span class="font-weight-bold rating__title">Creativity </span><span class="rating__stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="tags">
+            <div class="d-flex align-content-start flex-wrap tags__container">
+                <span class="rounded-pill tags__tag tags__tag_positive"><i class="far fa-grin"></i> Physical aggression</span>
+                <span class="rounded-pill tags__tag tags__tag_positive"><i class="far fa-grin"></i> Separation</span>
+                <span class="rounded-pill tags__tag tags__tag_positive"><i class="far fa-grin"></i> Kissing - mild</span>
+                <span class="rounded-pill tags__tag tags__tag_negative"><i class="far fa-frown"></i> Kissing - passionate</span>
+                <span class="rounded-pill tags__tag tags__tag_positive"><i class="far fa-grin"></i> Non-religious exclamations (dang, shoot, nuts) - minimal</span>
+                <span class="rounded-pill tags__tag tags__tag_negative"><i class="far fa-frown"></i> Hate speech/slurs</span>
+                <span class="rounded-pill tags__tag tags__tag_negative"><i class="far fa-frown"></i> Advertising</span>
+                <span class="rounded-pill tags__tag tags__tag_negative"><i class="far fa-frown"></i> Brand shown prominently</span>
+                <span class="rounded-pill tags__tag tags__tag_negative"><i class="far fa-frown"></i> Medicine (abuse)</span>
+                <span class="rounded-pill tags__tag tags__tag_positive"><i class="far fa-grin"></i> Themes in line with character strengths</span>
+                <span class="rounded-pill tags__tag tags__tag_negative"><i class="far fa-frown"></i> Negative social interactions (more than brief appearance)</span>
+                <span class="rounded-pill tags__tag tags__tag_positive"><i class="far fa-grin"></i> Positive, friendly interactions</span>
+                <span class="rounded-pill tags__tag tags__tag_positive"><i class="far fa-grin"></i> Responsible adults/caregivers</span>
+                <span class="rounded-pill tags__tag tags__tag_neutral">Language & Reading</span>
+                <span class="rounded-pill tags__tag tags__tag_neutral">Promotes school readiness</span>
+            </div>
+            <div class="tags__button text-center">
+                <a href="javascript:void(0)" class="tags__button_less"><i class="fas fa-chevron-up"></i> Show Less</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

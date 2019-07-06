@@ -1,0 +1,136 @@
+$color-background: #eaeaea;
+$color-container: #fff;
+$color-green: #4a9b5a;
+$color-blue: #6396b2;
+$color-yellow: #ffd700;
+$color-positive: #008000;
+$color-negative: #ff0101;
+$color-neutral: #cccccc;
+
+html body {
+    background: $color-background;
+}
+
+.container-main {
+    background: $color-container;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.heading{
+    padding-top: 1rem;
+    &__title {
+        color: $color-green;
+        font-size: 1.5rem;
+    }
+    &__channel {
+        color: $color-blue;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        margin-bottom: .75rem;
+    }
+}
+
+.video__thumbnail {
+    height: 30rem;
+    background-image: url("https://img.youtube.com/vi/AOcYIERhLKQ/sddefault.jpg");
+    background-position: center; 
+    background-size: 100%;
+    button {
+        font-size: 1.5rem;
+        padding-left: 1.2rem;
+        padding-right: 1.7rem;
+        margin: -20px -50px; 
+        position:relative;
+        top:50%; 
+        left:50%;
+        i {
+            font-size: 1.2rem;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.description {
+    padding: .75rem 0;
+}
+
+.rating {
+    &__container {
+        border: 1px solid $color-neutral;
+        text-align: center;
+        padding: .5rem;
+    }
+    &__stars {
+        color: $color-yellow;
+        font-size: .75rem;
+    }
+    &__container,
+    &__title,
+    &__stars {
+        display: inline-block;
+    }
+}
+
+.tags {
+    padding: .5rem 0;
+    &__container {
+        transition: max-height .5s ease;
+        max-height: 1000px;
+    }
+    &__tag {
+        padding: .5rem;
+        margin: .2rem;
+        transition: opacity .5s ease-out;
+        &_positive {
+            border: 1px solid $color-positive;
+            color: $color-positive;
+        }
+        &_negative {
+            border: 1px solid $color-negative;
+            color: $color-negative;
+        }
+        &_neutral {
+            border: 1px solid $color-neutral;
+        }
+        i {
+            font-size: 1.3rem;
+        }
+    }
+    &__button {
+        transition: opacity .5s ease-in-out;
+        position: relative;
+        z-index: 2;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    &__button_less:hover,
+    &__button_more:hover {
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .rating__container {
+        margin-top: .2rem;
+        margin-bottom: .2rem;
+    }
+    .tags__button {
+        padding-top: .2rem;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .video__thumbnail {
+        height: 25rem;
+        background-size: auto;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .video__thumbnail {
+        background-image: url("https://img.youtube.com/vi/AOcYIERhLKQ/maxresdefault.jpg");
+    }
+ }

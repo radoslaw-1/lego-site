@@ -1,0 +1,95 @@
+html body {
+  background: #eaeaea; }
+
+.container-main {
+  background: #fff;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.heading {
+  padding-top: 1rem; }
+  .heading__title {
+    color: #4a9b5a;
+    font-size: 1.5rem; }
+  .heading__channel {
+    color: #6396b2;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: .75rem; }
+
+.video__thumbnail {
+  height: 30rem;
+  background-image: url("https://img.youtube.com/vi/AOcYIERhLKQ/sddefault.jpg");
+  background-position: center;
+  background-size: 100%; }
+  .video__thumbnail button {
+    font-size: 1.5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.7rem;
+    margin: -20px -50px;
+    position: relative;
+    top: 50%;
+    left: 50%; }
+    .video__thumbnail button i {
+      font-size: 1.2rem; }
+  .video__thumbnail:hover {
+    cursor: pointer; }
+
+.description {
+  padding: .75rem 0; }
+
+.rating__container {
+  border: 1px solid #cccccc;
+  text-align: center;
+  padding: .5rem; }
+
+.rating__stars {
+  color: #ffd700;
+  font-size: .75rem; }
+
+.rating__container, .rating__title, .rating__stars {
+  display: inline-block; }
+
+.tags {
+  padding: .5rem 0; }
+  .tags__container {
+    transition: max-height .5s ease;
+    max-height: 1000px; }
+  .tags__tag {
+    padding: .5rem;
+    margin: .2rem;
+    transition: opacity .5s ease-out; }
+    .tags__tag_positive {
+      border: 1px solid #008000;
+      color: #008000; }
+    .tags__tag_negative {
+      border: 1px solid #ff0101;
+      color: #ff0101; }
+    .tags__tag_neutral {
+      border: 1px solid #cccccc; }
+    .tags__tag i {
+      font-size: 1.3rem; }
+  .tags__button {
+    transition: opacity .5s ease-in-out;
+    position: relative;
+    z-index: 2;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem; }
+  .tags__button_less:hover, .tags__button_more:hover {
+    text-decoration: none; }
+
+@media (max-width: 575.98px) {
+  .rating__container {
+    margin-top: .2rem;
+    margin-bottom: .2rem; }
+  .tags__button {
+    padding-top: .2rem; } }
+
+@media (max-width: 767.98px) {
+  .video__thumbnail {
+    height: 25rem;
+    background-size: auto; } }
+
+@media (min-width: 1200px) {
+  .video__thumbnail {
+    background-image: url("https://img.youtube.com/vi/AOcYIERhLKQ/maxresdefault.jpg"); } }
